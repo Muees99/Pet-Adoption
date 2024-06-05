@@ -27,7 +27,7 @@ const Navbar = () => {
   }, [searchParams]);
 
   return (
-    <header className="w-full bg-black">
+    <header className="w-full ">
       <nav
         className={cn(
           "max-[500px]:py-2 shadow-lg font-montserrat sm:px-[5%] px-[4%] h-[12vh] flex shadow-slate-800/20 justify-between items-center transition-colors duration-500 max-w-[1440px] mx-auto",
@@ -47,7 +47,7 @@ const Navbar = () => {
             "animate-pulse" // Apply the pulse animation
           )}
         >
-          <span className="text-white font-montserrat text-lg lg:text-2xl font-semibold">
+          <span className="text-black font-montserrat text-lg lg:text-2xl font-semibold">
             Doggy
           </span>
         </Link>
@@ -79,7 +79,7 @@ const Navbar = () => {
           <Button
             href="/"
             type="button"
-            className="bg-[#262728] hover:bg-[#fff27b86] focus:bg-[#807500] px-4 py-2 rounded-md font-medium text-white"
+            className="bg-white hover:bg-[#fff27b86] focus:bg-[#807500] px-4 py-2 rounded-md font-medium border text-black"
           >
             Login
             <CiLogin />
@@ -87,7 +87,7 @@ const Navbar = () => {
           <Button
             href="/"
             type="button"
-            className="bg-[#262728] hover:bg-[#fff27b86] focus:bg-[#807500] px-4 py-2 rounded-md font-medium text-white"
+            className="bg-[#93bb5a] hover:bg-[#fff27b86] focus:bg-[#807500] px-4 py-2 rounded-md font-medium text-black"
           >
             Sign Up
             <CiLogout />
