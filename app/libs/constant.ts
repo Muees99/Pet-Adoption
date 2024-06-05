@@ -1,12 +1,13 @@
 import { NavLinkProps, FooterLinkProps } from "../@types";
 
 export const NAVLINKS: NavLinkProps[] = [
-  { id: 1, link: "new-arrivals", label: "New Arrivals" },
-  { id: 2, link: "best-sellers", label: "Best Sellers" },
-  { id: 3, link: "sales", label: "Sales" },
-  { id: 4, link: "showroom", label: "Showroom" },
+  { id: 1, link: "about-us", label: "About us" },
+  { id: 2, link: "puppies", label: "Puppies" },
+  { id: 3, link: "services", label: "Services" },
+  { id: 4, link: "medi-care", label: "Medi-Care" },
+  { id: 5, link: "pet-shop", label: "Pet Shop" },
+  { id: 6, link: "contact-us", label: "Contact Us" },
   // { id: 5, link: "cart", label: "cart" },
-  { id: 5, link: "contact-us", label: "Contact Us" },
 ];
 
 export const FOOTER_LINKS: FooterLinkProps = {
