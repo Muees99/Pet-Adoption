@@ -12,6 +12,7 @@ import { useStateCtx } from "@/app/context/StateContext";
 import useWindowHeight from "@/app/hooks/useDimension";
 import Button from "@/app/Ui/Button";
 import { CiLogin, CiLogout } from "react-icons/ci";
+import { IoPaw } from "react-icons/io5";
 
 const Navbar = () => {
   const { showMobileMenu, setShowMobileMenu } = useStateCtx();
@@ -47,7 +48,8 @@ const Navbar = () => {
             "animate-pulse" // Apply the pulse animation
           )}
         >
-          <span className="text-black font-montserrat text-lg lg:text-2xl font-semibold">
+          <span className=" flex text-black text-lg lg:text-2xl font-bold">
+            <IoPaw />
             Doggy
           </span>
         </Link>
@@ -79,7 +81,7 @@ const Navbar = () => {
           <Button
             href="/"
             type="button"
-            className="bg-white hover:bg-[#fff27b86] focus:bg-[#807500] px-4 py-2 rounded-md font-medium border text-black"
+            className="bg-[#ffffff] hover:bg-[#9d997886] focus:bg-[#807500] px-4 py-2 rounded-md font-medium border border-[#484646] text-black"
           >
             Login
             <CiLogin />
@@ -87,7 +89,7 @@ const Navbar = () => {
           <Button
             href="/"
             type="button"
-            className="bg-[#93bb5a] hover:bg-[#fff27b86] focus:bg-[#807500] px-4 py-2 rounded-md font-medium text-black"
+            className="bg-[#484646] hover:bg-[#9d997886] focus:bg-[#807500] px-4 py-2 rounded-md font-medium text-white"
           >
             Sign Up
             <CiLogout />
@@ -99,7 +101,7 @@ const Navbar = () => {
           className="lg:hidden text-2xl cursor-pointer focus:border border-primary focus:p-1 focus:rounded-md"
           onClick={() => setShowMobileMenu(true)}
         >
-          <FaBars className="text-[#fff27b86]" />
+          <FaBars className=" text-gray-500"/>
         </div>
         <MobileNav />
       </nav>
