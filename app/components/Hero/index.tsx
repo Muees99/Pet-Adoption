@@ -72,7 +72,7 @@ function Hero() {
                     alt=" header banner"
                     // width={696}
                     // height={250}
-                    width={350}
+                    width={450}
                     height={350}
                     priority
                   />
