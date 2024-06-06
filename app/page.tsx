@@ -7,7 +7,7 @@ import HomeLayout from "./layout/HomeLayout";
 
 const LoadingSpinner = () => (
   <div className="flex items-center justify-center h-screen">
-    <FiLoader className="animate-spin h-12 w-12 text-yellow-400" />
+    <FiLoader className="animate-spin h-12 w-12 text-[#484646]" />
   </div>
 );
 
@@ -18,6 +18,6 @@ export default function Home() {
         <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
       </HomeLayout>
     </Suspense>
-    
+
   );
 }
