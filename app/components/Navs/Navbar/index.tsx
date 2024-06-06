@@ -13,6 +13,7 @@ import useWindowHeight from "@/app/hooks/useDimension";
 import Button from "@/app/Ui/Button";
 import { CiLogin, CiLogout } from "react-icons/ci";
 import { IoPaw } from "react-icons/io5";
+import { BsSearchHeart } from "react-icons/bs";
 
 const Navbar = () => {
   const { showMobileMenu, setShowMobileMenu } = useStateCtx();
@@ -50,7 +51,7 @@ const Navbar = () => {
         >
           <span className=" flex text-black text-lg lg:text-2xl font-bold">
             <IoPaw />
-            Doggy
+            Doggie
           </span>
         </Link>
 
@@ -78,21 +79,29 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex gap-x-3 xl:gap-x-5">
-          <Button
+          {/* <Button
             href="/"
             type="button"
             className="bg-[#ffffff] hover:bg-[#9d997886] focus:bg-[#807500] px-4 py-2 rounded-md font-medium border border-[#484646] text-black"
           >
             Login
             <CiLogin />
-          </Button>
+          </Button> */}
+          <div className="relative flex-1">
+            <BsSearchHeart className="absolute left-3 top-1/2 transform -translate-y-1/2" />
+            <input
+              className=" pl-10  px-4 py-2 font-medium placeholder-opacity-100 border rounded-full focus:outline-none bg-transparent"
+              type="text"
+              placeholder="Search your preferred Breed"
+            />
+          </div>
           <Button
             href="/"
             type="button"
-            className="bg-[#484646] hover:bg-[#9d997886] focus:bg-[#807500] px-4 py-2 rounded-md font-medium text-white"
+            className="bg-[#837c3a86] hover:bg-[#dbd28086] focus:bg-[#807500] px-4 py-2 rounded-full font-medium text-white"
           >
-            Sign Up
-            <CiLogout />
+            <CiLogin className=" text-black" />
+            {/* <CiLogout /> */}
           </Button>
         </div>
 
@@ -101,7 +110,7 @@ const Navbar = () => {
           className="lg:hidden text-2xl cursor-pointer focus:border border-primary focus:p-1 focus:rounded-md"
           onClick={() => setShowMobileMenu(true)}
         >
-          <FaBars className=" text-gray-500"/>
+          <FaBars className=" text-gray-500" />
         </div>
         <MobileNav />
       </nav>
