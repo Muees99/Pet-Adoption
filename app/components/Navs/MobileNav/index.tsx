@@ -83,7 +83,7 @@ const MobileNav = () => {
           <Button
             href="/"
             type="button"
-            className="bg-[#fff27b86] hover:bg-[#fff27b86] focus:bg-[#807500] px-8 py-2 rounded-md font-medium text-white"
+            className="bg-[#ffffff] focus:bg-[#807500] px-8 py-2 rounded-md font-medium  border border-[#484646] text-black"
           >
             Login
             <CiLogin className="ml-2" />
@@ -91,9 +91,9 @@ const MobileNav = () => {
           <Button
             href="/"
             type="button"
-            className="bg-[#fff27b86] hover:bg-[#fff27b86] focus:bg-[#807500] px-8 py-2 rounded-md font-medium text-white"
+            className="bg-[#484646] focus:bg-[#807500] px-8 py-2 rounded-md font-medium text-white"
           >
-            Logout
+            Sign Up
             <CiLogout className="ml-2" />
           </Button>
         </div>
