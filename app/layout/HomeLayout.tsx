@@ -20,7 +20,7 @@ export default function HomeLayout({
   if (loading) {
     return (
       <div className="flex items-center justify-center h-screen">
-        <FiLoader className="animate-spin h-12 w-12 text-blue-500" />
+        <FiLoader className="animate-spin h-12 w-12 text-[#484646]" />
       </div>
     );
   } 
