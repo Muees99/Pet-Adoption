@@ -41,6 +41,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
 import Image from "next/image";
+import Button from "@/app/Ui/Button";
+import { IoIosArrowForward } from "react-icons/io";
 
 type CardVariant = {
   hidden: { opacity: number; y: number };
@@ -63,7 +65,7 @@ const Catalogue: React.FC = () => {
       image: "/image2.jpg",
       title: "Card Title 2",
       description: "Card description goes here...",
-    }
+    },
   ];
 
   return (
@@ -71,21 +73,21 @@ const Catalogue: React.FC = () => {
       <div className="max-w-[1440px] mx-auto sm:px-[5%] px-[4%]">
         <div className="flex w-full h-full items-center">
           <div className="flex flex-col md:flex-row justify-between w-full min-h-[550px]">
-            <div className="flex flex-col items-center">
-              <div className="flex items-center mb-4 bg-transparent w-full">
+            <div className="flex flex-col w-full">
+              <div className="flex items-center mb-4 bg-[#454746]">
                 <Image
                   src="/assets/Lebrado.svg"
                   alt="Descriptive image alt text"
                   width={150}
                   height={150}
-                  className="mr-4 rounded-full object-cover"
+                  className="m-4 rounded-full "
                 />
-                <div className=" flex flex-col">
+                <div className=" flex flex-col m-4 ">
                   <motion.h3
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className=" text-white text-3xl md:text-5xl sm:text-2xl font-normal"
+                    className=" text-white text-3xl md:text-5xl sm:text-2xl font-normal ml-20"
                     style={{ fontFamily: "Noto Sans, sans-serif" }}
                   >
                     They need your love and support
@@ -94,20 +96,20 @@ const Catalogue: React.FC = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className=" font-normal mt-4  text-gray-400 sm:w-[500px] w-full"
+                    className=" font-normal mt-4  ml-20 text-gray-400 sm:w-[500px] w-full"
                   >
                     Rorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
                     dignissim, metus nec fringilla accumsan, risus sem
                     sollicitudin lacus, ut interdum tellus elit sed risus.
                     Maecenas eget condimentum velit, sit amet feugiat lectus.
-                    Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos. Praesent auctor purus luctus
-                    enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus
-                    ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur
-                    vel bibendum lorem. Morbi convallis convallis diam sit amet
-                    lacinia. Aliquam in elementum tellus.
                   </motion.p>
+                </div>
+                <div className="flex ">
+                  <Button className="flex items-center  px-4 py-2 rounded-full font-medium text-[#FFF] bg-[#837c3a86] hover:bg-[#dbd28086] focus:bg-[#807500] mb-6 sm:mb-0 sm:mr-4">
+                    More
+                    <IoIosArrowForward />
+                  </Button>
                 </div>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
