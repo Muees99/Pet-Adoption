@@ -27,7 +27,7 @@ function Hero() {
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
-                  className="font-normal mt-4 text-white sm:w-[500px] w-full"
+                  className="font-normal mt-4 text-gray-400 sm:w-[500px] w-full"
                 >
                   "Adopt a furry friend and make a paw-sitive difference in
                   their life today"
