@@ -51,7 +51,7 @@ const Navbar = () => {
         >
           <span className=" flex text-black text-lg lg:text-2xl font-bold">
             <IoPaw />
-            Doggie
+            Pet Care
           </span>
         </Link>
 
