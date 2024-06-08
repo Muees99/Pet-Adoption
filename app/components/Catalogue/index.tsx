@@ -432,27 +432,31 @@ const Catalogue: React.FC = () => {
     {
       image: "/assets/Pitbull.svg",
       title: "PIT BULL",
-      age: "8 months old",
+      age: "11 months old",
       description: " Very friendly and potective",
     },
     {
       image: "/assets/Mastiff.svg",
-      title: "Card Title 2",
+      title: "MASTIFF",
+      age: "4 months old",
       description: "Card description goes here...",
     },
     {
       image: "/assets/Bernese.svg",
-      title: "Card Title 3",
+      title: "BERNESE",
+      age: "5 months old",
       description: "Card description goes here...",
     },
     {
       image: "/assets/Husky.svg",
-      title: "Card Title 4",
+      title: "HUSKY",
+      age: "4 months old",
       description: "Card description goes here...",
     },
     {
       image: "/assets/Pinscher.svg",
-      title: "Card Title 5",
+      title: "PINSCHER",
+      age: "9 months old",
       description: "Card description goes here...",
     },
   ];
@@ -520,28 +524,13 @@ const Catalogue: React.FC = () => {
                     className="rounded-lg object-cover"
                   />
                 </div>
-                {/* <div className="p-1"> */}
-                  {/* <div className="rounded-lg bg-gray-100 p-4">
-                    <h4 className="text-lg font-semibold mb-2 flex justify-center">
-                      {card.title}
-                    </h4>
-                    <p className="text-gray-700 text-sm flex justify-center">
-                      {card.age}
-                    </p>
-                    <p className="text-gray-700 text-sm ">{card.description}</p>
-                  </div> */}
-                  <div className="p-1 flex flex-col items-center text-center">
-                    <div className="rounded-lg bg-gray-100 p-4 w-full">
-                      <h4 className="text-lg font-semibold mb-2">
-                        {card.title}
-                      </h4>
-                      <p className="text-gray-700 text-sm">{card.age}</p>
-                      <p className="text-gray-700 text-sm">
-                        {card.description}
-                      </p>
-                    </div>
+                <div className="p-1 flex flex-col items-center text-center">
+                  <div className="rounded-lg bg-gray-100 p-4 w-full">
+                    <h4 className="text-lg font-semibold mb-2">{card.title}</h4>
+                    <p className="text-gray-700 text-sm">{card.age}</p>
+                    <p className="text-gray-700 text-sm">{card.description}</p>
                   </div>
-                {/* </div> */}
+                </div>
               </motion.div>
             ))}
           </AnimatePresence>
