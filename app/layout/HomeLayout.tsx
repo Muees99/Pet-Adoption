@@ -4,6 +4,7 @@ import { FiLoader } from 'react-icons/fi';
 import Navbar from '../components/Navs/Navbar';
 import Hero from '../components/Hero';
 import Catalogue from '../components/Catalogue';
+import AdoptProcess from '../components/AdoptProcess';
 
 export default function HomeLayout({
   children,
@@ -31,6 +32,7 @@ export default function HomeLayout({
     <Navbar/>
     <Hero/>
     <Catalogue/>
+    <AdoptProcess/>
     </>
   )
 }
