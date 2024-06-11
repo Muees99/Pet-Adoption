@@ -29,8 +29,8 @@ function Hero() {
                   transition={{ duration: 0.5, delay: 0.4 }}
                   className="font-normal mt-4 text-gray-400 sm:w-[500px] w-full"
                 >
-                  `&quot;`Adopt a furry friend and make a paw-sitive difference
-                  in their life today`&quot;`
+                  &quot;Adopt a furry friend and make a paw-sitive difference
+                  in their life today&quot;
                 </motion.p>
 
                 <motion.div
