@@ -437,7 +437,7 @@ const Card: React.FC<ReviewData> = ({
         style={{
           width: "10px",
           height: "10px",
-          background: "red",
+          background: "ivory",
           borderRadius: "50%",
           position: "absolute",
         }}
@@ -454,7 +454,7 @@ const Card: React.FC<ReviewData> = ({
         style={{
           width: "20px",
           height: "20px",
-          background: "blue",
+          background: "olive",
           borderRadius: "50%",
           position: "absolute",
         }}
