@@ -82,3 +82,27 @@ input[type='number']::-webkit-outer-spin-button {
       animation: slide-left 0.5s ease-out;
     }
 }
+
+/* Card Review */
+.ribbon-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.ribbon-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-270px * 8)); /* Adjust based on the number of cards */
+  }
+}
