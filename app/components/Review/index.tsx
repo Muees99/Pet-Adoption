@@ -347,7 +347,7 @@ interface ReviewData {
 
 const reviewData: ReviewData[] = [
   {
-    image: "/assets/ClientDP.svg",
+    image: "/assets/Alice.svg",
     header: "Alice Smith",
     subheader: "Dog Lover",
     content:
@@ -355,7 +355,7 @@ const reviewData: ReviewData[] = [
     rating: 5,
   },
   {
-    image: "/assets/ClientDP.svg",
+    image: "/assets/Bob.svg",
     header: "Bob Johnson",
     subheader: "Animal Enthusiast",
     content:
@@ -363,7 +363,7 @@ const reviewData: ReviewData[] = [
     rating: 4,
   },
   {
-    image: "/assets/ClientDP.svg",
+    image: "/assets/Carol.svg",
     header: "Carol Williams",
     subheader: "Pet Owner",
     content:
@@ -371,7 +371,7 @@ const reviewData: ReviewData[] = [
     rating: 5,
   },
   {
-    image: "/assets/ClientDP.svg",
+    image: "/assets/David.svg",
     header: "David Jones",
     subheader: "Pet Parent",
     content:
@@ -379,7 +379,7 @@ const reviewData: ReviewData[] = [
     rating: 4,
   },
   {
-    image: "/assets/ClientDP.svg",
+    image: "/assets/Eva.svg",
     header: "Eva Brown",
     subheader: "Dog Trainer",
     content:
@@ -387,7 +387,7 @@ const reviewData: ReviewData[] = [
     rating: 5,
   },
   {
-    image: "/assets/ClientDP.svg",
+    image: "/assets/Frank.svg",
     header: "Frank Miller",
     subheader: "Animal Advocate",
     content:
@@ -395,7 +395,7 @@ const reviewData: ReviewData[] = [
     rating: 4,
   },
   {
-    image: "/assets/ClientDP.svg",
+    image: "/assets/Gina.svg",
     header: "Gina Thompson",
     subheader: "Veterinarian",
     content:
@@ -403,7 +403,7 @@ const reviewData: ReviewData[] = [
     rating: 5,
   },
   {
-    image: "/assets/ClientDP.svg",
+    image: "/assets/Henry.svg",
     header: "Henry Clark",
     subheader: "Dog Enthusiast",
     content:
@@ -478,7 +478,10 @@ const Card: React.FC<ReviewData> = ({
     <div className="card-content">
       <p>{content}</p>
     </div>
-    <div className="rating mt-2">
+    <div
+      className="rating mt-2 
+     text-amber-300"
+    >
       {"★".repeat(rating)}
       {"☆".repeat(5 - rating)}
     </div>
