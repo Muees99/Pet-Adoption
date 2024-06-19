@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 import Catalogue from '../components/Catalogue';
 import AdoptProcess from '../components/AdoptProcess';
 import Review from '../components/Review';
+import Footer from '../components/Footer';
 
 export default function HomeLayout({
   children,
@@ -35,6 +36,7 @@ export default function HomeLayout({
     <Catalogue/>
     <AdoptProcess/>
     <Review/>
+    <Footer/>
     </>
   )
 }
