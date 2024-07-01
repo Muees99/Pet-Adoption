@@ -13,7 +13,7 @@ function AdoptProcess() {
         <div className="flex flex-col md:flex-row justify-between items-start w-full text-white h-full overflow-y-auto">
           <div className="flex-1 overflow-y-auto p-4">
             <div className="mb-4 md:mb-0">
-              <h3 className="font-semibold mt-10">Choose a pet</h3>
+              <h3 className="font-semibold mt-10">Choose A Pet</h3>
               <p className="mt-4">
                 Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
@@ -24,7 +24,7 @@ function AdoptProcess() {
               </p>
             </div>
             <div className="mb-4 md:mb-0">
-              <h3 className="font-semibold mt-10">Complete the Application</h3>
+              <h3 className="font-semibold mt-10">Meet Us</h3>
               <p className="mt-4">
                 Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
@@ -35,7 +35,7 @@ function AdoptProcess() {
               </p>
             </div>
             <div className="mb-4 md:mb-0">
-              <h3 className="font-semibold mt-10">Complete the Application</h3>
+              <h3 className="font-semibold mt-10">Fill The Adoption Form</h3>
               <p className="mt-4">
                 Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
@@ -46,7 +46,7 @@ function AdoptProcess() {
               </p>
             </div>
             <div className="mb-4 md:mb-0">
-              <h3 className="font-semibold mt-10">Complete the Application</h3>
+              <h3 className="font-semibold mt-10">Take Your Pet Home</h3>
               <p className="mt-4">
                 Horem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
