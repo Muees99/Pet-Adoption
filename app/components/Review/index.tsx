@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
+import Button from "@/app/Ui/Button";
 
 // interface ReviewData {
 //   header: string;
@@ -333,10 +334,6 @@ import Image from "next/image";
 
 // export default Review;
 
-
-
-
-
 interface ReviewData {
   header: string;
   subheader: string;
@@ -503,6 +500,37 @@ function Review() {
               <Card key={index} {...review} />
             ))}
           </motion.div>
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <div className=" flex  flex-col justify-center items-center text-white">
+            <h2 className=" text-xl md:text-2xl sm:text-lg leading-[140%] font-semibold mt-4">
+              Sign up for our newsletter
+            </h2>
+            <p className=" mt-2">
+              Enjoy 30% discount buy subscribing to our news letter{" "}
+            </p>
+          </div>
+          {/* <div className="relative">
+            <input
+              className="w-full bg-gray-100 h-12 px-4 border rounded-lg outline-[#D0D5DD]"
+              type="text"
+              // onChange={handleInputChange}
+              placeholder="sample@email.com"
+            />
+            <Button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gradient-to-br from-[#ff7c5b] to-[#8a50f0]  text-white text-sm font-medium leading-snug text-center rounded-full ml-4">
+              Subscribe
+            </Button>
+          </div> */}
+          <div className="relative flex items-center mt-4">
+            <input
+              className="w-full p-4 pr-32 font-medium placeholder-opacity-100 border rounded-full focus:outline-none bg-gray-100"
+              type="text"
+              placeholder="contact@petadoption.com"
+            />
+            <Button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#807500] hover:bg-[#47431c86] focus:bg-[#807500] text-white text-sm font-medium leading-snug text-center rounded-full px-4 py-2">
+              Subscribe
+            </Button>
+          </div>
         </div>
       </div>
     </div>
