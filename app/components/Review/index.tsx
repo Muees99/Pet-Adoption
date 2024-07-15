@@ -177,7 +177,8 @@ function Review() {
               Sign up for our newsletter
             </h2>
             <p className=" mt-2">
-              Enjoy 30% discount buy subscribing to our news letter{" "}
+              Subscribe to our newsletter and enjoy a 30% discount on our pet
+              adoption services and veterinary clinic.
             </p>
           </div>
           <div className="relative flex items-center mt-4">
