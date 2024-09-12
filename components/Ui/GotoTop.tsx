@@ -2,7 +2,7 @@
 
 import { BsArrowUp } from "react-icons/bs";
 
-import useWindowHeight from "@/app/hooks/useDimension";
+import useWindowHeight from "@/hooks/useDimension";
 import React from "react";
 import cn from "@/app/utils/twcx";
 
