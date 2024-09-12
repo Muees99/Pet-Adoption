@@ -14,11 +14,13 @@ import Button from "@/components/Ui/Button";
 import { CiLogin, CiLogout } from "react-icons/ci";
 import { IoPaw } from "react-icons/io5";
 import { BsSearchHeart } from "react-icons/bs";
+// import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const { showMobileMenu, setShowMobileMenu } = useStateCtx();
   const searchParams = useSearchParams().get("path");
   const scrollHeight = useWindowHeight();
+  const router = useRouter();
 
   const [isActive, setIsActive] = useState("");
   useEffect(() => {
@@ -96,8 +98,12 @@ const Navbar = () => {
             />
           </div>
           <Button
-            href="/"
-            type="button"
+            // href="/auth/login"
+            // type="button"
+            isLoading={false}
+            onClick={() => {
+              router.push("/auth/login");
+            }}
             className="bg-[#837c3a86] hover:bg-[#dbd28086] focus:bg-[#807500] px-4 py-2 rounded-full font-medium text-white"
           >
             <CiLogin className=" text-black" />
