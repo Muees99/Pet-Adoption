@@ -6,7 +6,6 @@ import { useState } from "react";
 import { IoEyeOutline, IoEyeOffOutline } from "react-icons/io5";
 // import ForgotPasswordModal from "../../../components/ForgotPassModal";
 import useDisclosure from "@/app/hook/useDisclosure";
-
 import SignUpWithGoogle from "@/components/AuthSocialButtons/SignUpWithGoogle";
 // import { login as loginApi } from "../../http/auth";
 
@@ -111,7 +110,7 @@ function LoginPage() {
           </div>
           <div className=" items-center justify-center flex mt-[32px] font-normal text-[14px]">
             <label>Don&apos;t have an account?</label>
-            <Link href={"./signup"} className=" text-[#265D5C]">
+            <Link href={"/auth/signup"} className=" text-[#265D5C]">
               Create account
             </Link>
           </div>
@@ -122,8 +121,6 @@ function LoginPage() {
           </div>
           <div className="mt-[1.6rem] flex flex-col gap-[1rem] relative">
             <SignUpWithGoogle />
-            {/* <SignUpWithGithub /> */}
-            {/* <SignUpWithFacebook /> */}
           </div>
         </div>
       </div>

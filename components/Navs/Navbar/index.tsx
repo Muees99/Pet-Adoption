@@ -14,7 +14,6 @@ import Button from "@/components/Ui/Button";
 import { CiLogin, CiLogout } from "react-icons/ci";
 import { IoPaw } from "react-icons/io5";
 import { BsSearchHeart } from "react-icons/bs";
-// import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const { showMobileMenu, setShowMobileMenu } = useStateCtx();
