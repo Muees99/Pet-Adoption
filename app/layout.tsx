@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import GotoTop from "./Ui/GotoTop";
-import StateContextProvider from "./context/StateContext";
+import GotoTop from "@/components/Ui/GotoTop";
+import StateContextProvider from "@/context/StateContext";
 
 const inter = Inter({ subsets: ["latin"] });
 

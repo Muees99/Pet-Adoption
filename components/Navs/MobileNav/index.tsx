@@ -1,6 +1,5 @@
-
 "use client";
-import { useStateCtx } from "@/app/context/StateContext";
+import { useStateCtx } from "@/context/StateContext";
 import { NAVLINKS } from "@/app/libs/constant";
 import cn from "@/app/utils/twcx";
 import Link from "next/link";
@@ -8,7 +7,7 @@ import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { BsX } from "react-icons/bs";
 import { CiLogin, CiLogout } from "react-icons/ci";
-import Button from "@/app/Ui/Button";
+import Button from "@/components/Ui/Button";
 
 const MobileNav = () => {
   const { showMobileMenu, setShowMobileMenu } = useStateCtx();

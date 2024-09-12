@@ -1,12 +1,12 @@
 "use client";
 import React, { useEffect, useState } from 'react'
 import { FiLoader } from 'react-icons/fi';
-import Navbar from '../components/Navs/Navbar';
-import Hero from '../components/Hero';
-import Catalogue from '../components/Catalogue';
-import AdoptProcess from '../components/AdoptProcess';
-import Review from '../components/Review';
-import Footer from '../components/Footer';
+import Navbar from '@/components/Navs/Navbar';
+import Hero from '@/components/Hero';
+import Catalogue from '@/components/Catalogue';
+import AdoptProcess from '@/components/AdoptProcess';
+import Review from '@/components/Review';
+import Footer from '@/components/Footer';
 
 export default function HomeLayout({
   children,

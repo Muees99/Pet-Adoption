@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
-import Button from "@/app/Ui/Button";
+import Button from "@/components/Ui/Button";
 import { MdOutlineUnsubscribe } from "react-icons/md";
 
 interface ReviewData {
