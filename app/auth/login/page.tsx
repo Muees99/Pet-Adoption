@@ -49,8 +49,8 @@ function LoginPage() {
 
   return (
     <>
-      <div className="flex flex-col gap-y-2  items-center justify-center min-h-screen">
-        <Image src="/assets/logo.svg" alt="logo" width={180} height={60} />
+      <div className="flex flex-col gap-y-2  items-center justify-center min-h-screen overflow-hidden">
+        {/* <Image src="" alt="logo" width={180} height={60} /> */}
 
         <div className=" flex flex-col md:w-[475px] w-[270px] md:h-[468px]  mt-6">
           <div className=" items-center justify-center flex-col flex">
