@@ -52,7 +52,7 @@ function LoginPage() {
       <div className="flex flex-col gap-y-2  items-center justify-center min-h-screen overflow-hidden">
         {/* <Image src="" alt="logo" width={180} height={60} /> */}
 
-        <div className=" flex flex-col md:w-[475px] w-[270px] md:h-[468px]  mt-6">
+        <div className=" flex flex-col md:w-[475px] w-[270px] md:h-[468px]">
           <div className=" items-center justify-center flex-col flex">
             <h2 className=" font-bold text-2xl">Welcome Back!</h2>
             <p className=" text-[14px]">Login to continue to your account...</p>

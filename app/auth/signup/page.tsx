@@ -48,8 +48,7 @@ function SignUpPage() {
   return (
     <>
       <div className="flex flex-col gap-y-2  items-center justify-center min-h-screen">
-        {/* <Image src="/assets/logo.svg" alt="logo" width={180} height={60} /> */}
-        <div className=" flex flex-col md:w-[475px] w-[270px] md:h-[666px] mt-6">
+        <div className=" flex flex-col md:w-[475px] w-[270px] md:h-[666px]">
           <div className=" items-center justify-center flex-col flex">
             <h2 className=" font-bold text-2xl ">Welcome to Coallab</h2>
             <p className=" text-[14px] mt-[8px] ">
