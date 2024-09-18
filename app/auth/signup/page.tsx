@@ -141,7 +141,6 @@
 
 // export default SignUpPage;
 
-
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -156,7 +155,7 @@ function SignUpPage() {
   const [password, setPassword] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  
+
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const inputValue = event.target.value;
     setEmail(inputValue);
@@ -193,13 +192,15 @@ function SignUpPage() {
     <div className="flex flex-col items-center justify-center min-h-screen">
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl md:gap-x-8">
         {/* Left side with the image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+
+        <div className="hidden md:flex w-1/2 h-full">
+          {/* justify-center items-center */}
           <Image
-            src="/assets/signup-image.jpg" // Add your image path here
-            alt="Sign up"
-            width={500} // Adjust the width and height based on your image
+            src="/assets/adopt-pet.png"
+            alt="Pet with Adopt Me sign"
+            width={500}
             height={500}
-            className="object-cover rounded-md"
+            className=" object-cover"
           />
         </div>
 
@@ -286,9 +287,7 @@ function SignUpPage() {
             <p className="mx-4 text-gray-300 font-semibold">OR</p>
             <div className="w-1/2 h-[0.0625rem] bg-gray-300"></div>
           </div>
-          <div className="mt-[1.6rem] flex flex-col gap-[1rem]">
-            <SignUpWithGoogle />
-          </div>
+          <SignUpWithGoogle />
         </div>
       </div>
     </div>
