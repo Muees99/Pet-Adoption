@@ -193,7 +193,7 @@ function SignUpPage() {
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl md:gap-x-8">
         {/* Left side with the image */}
 
-        <div className="hidden md:flex w-1/2 h-full">
+        <div className="hidden md:flex w-1/2 h-full justify-center items-center">
           {/* justify-center items-center */}
           <Image
             src="/assets/adopt-pet.png"
