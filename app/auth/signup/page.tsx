@@ -220,7 +220,7 @@ function SignUpPage() {
             <div className="flex flex-col w-full h-[86px] mt-[40px]">
               <label className="justify-start">First Name</label>
               <input
-                className="border rounded-md w-full h-[54px] p-[14px]"
+                className="border rounded-md outline-none w-full h-[54px] p-[14px]"
                 placeholder="First Name"
                 onChange={(e) => setFirstName(e.target.value)}
               />
@@ -228,7 +228,7 @@ function SignUpPage() {
             <div className="flex flex-col w-full h-[86px] mt-[20px]">
               <label className="justify-start w-full">Last Name</label>
               <input
-                className="border rounded-md w-full h-[54px] p-[14px]"
+                className="border rounded-md outline-none w-full h-[54px] p-[14px]"
                 placeholder="Last Name"
                 onChange={(e) => setLastName(e.target.value)}
               />
